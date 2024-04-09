@@ -1,18 +1,11 @@
 # Neovim
-my build of neovim
-=======
 
 ##  Screenshots
-Home screen with desktop.nvim
-![Preview1](https://github.com/Tanishkshk1/nvim/blob/main/src_img/pic-selected-221224-2156-41.png)
-Nvim tree and Treesitter
-![Preview2](https://github.com/Tanishkshk1/Neovim/blob/master/src_img/pic-selected-221219-2001-05.png)
-Auto completions with LSP
-![Preview3](https://github.com/Tanishkshk1/Neovim/blob/master/src_img/pic-selected-221219-2004-58.png)
-Fuzzy finding with Telescope
-![Preview4](https://github.com/Tanishkshk1/nvim/blob/main/src_img/pic-selected-221224-2159-15.png)
-File browsing with Telescope file_browser
-![Preview5](https://github.com/Tanishkshk1/nvim/blob/main/src_img/pic-window-221224-2159-38.png)
+![Preview1](Tanishkshk1/nvim/blob/main/src_img/pic-selected-221224-2156-41.png)
+
+![Preview2](https://github.com/Tanishkshk1/Gamer-vim/blob/main/src-img/240409_13h30m03s_screenshot.png)
+
+![Preview3](https://github.com/Tanishkshk1/Gamer-vim/blob/main/src-img/240409_13h30m40s_screenshot.png)
 
 ##  Features
 
