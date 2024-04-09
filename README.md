@@ -1,7 +1,7 @@
 # Neovim
 
 ##  Screenshots
-![Preview1](Tanishkshk1/nvim/blob/main/src_img/pic-selected-221224-2156-41.png)
+![Preview1](https://github.com/Tanishkshk1/Gamer-vim/blob/main/src-img/240409_13h27m25s_screenshot.png)
 
 ![Preview2](https://github.com/Tanishkshk1/Gamer-vim/blob/main/src-img/240409_13h30m03s_screenshot.png)
 
