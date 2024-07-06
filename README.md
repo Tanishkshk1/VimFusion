@@ -1,13 +1,12 @@
 # Neovim
 
-##  Screenshots
-![Preview1](https://github.com/Tanishkshk1/Gamer-vim/blob/main/src-img/240409_13h27m25s_screenshot.png)
+## Screenshots
 
 ![Preview2](https://github.com/Tanishkshk1/Gamer-vim/blob/main/src-img/240409_13h30m03s_screenshot.png)
 
 ![Preview3](https://github.com/Tanishkshk1/Gamer-vim/blob/main/src-img/240409_13h30m40s_screenshot.png)
 
-##  Features
+## Features
 
 - File explorer with [Nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 - Greeter with [Alpha-nvim](https://github.com/goolord/alpha-nvim)
@@ -18,9 +17,8 @@
 
 ## Prerequisites
 
-- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) 
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 - [Neovim 9.5](https://github.com/neovim/neovim/releases/tag/v0.9.5)
-
 
 ## Installation
 
@@ -57,16 +55,14 @@ Run `:Lazy` to update and clean plugins<br>
 
 ## Todo
 
-
 ```
 
 ### Improvements
 - [ ] Add github copilot Support
-  - [ ] Improve the overall Cmp  
+  - [ ] Improve the overall Cmp
 ```
 
-
-##  Credits
+## Credits
 
 Sincere appreciation to the following repositories, plugin authors and the entire neovim community out there that made the development of AstroNvim possible.
 
@@ -81,4 +77,3 @@ Sincere appreciation to the following repositories, plugin authors and the entir
 [![Lua](https://img.shields.io/badge/Made%20with%20Lua-blue.svg?style=for-the-badge&logo=lua)](https://lua.org)
 
 </div>
-
