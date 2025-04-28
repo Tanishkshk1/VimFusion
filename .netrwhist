@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/tanish/.config/nvim/lua/tanish'
+let g:netrw_dirhist_6='/home/tanish/.config/nvim/lua'
+let g:netrw_dirhist_5='/home/tanish/.config/nvim'
+let g:netrw_dirhist_4='/home/tanish/.config/nvim/lua/tanish/plugins'
+let g:netrw_dirhist_3='/home/tanish/.config/nvim/lua/tanish'
+let g:netrw_dirhist_2='/home/tanish/.config/nvim/lua'
+let g:netrw_dirhist_1='/home/tanish/.config/nvim'
