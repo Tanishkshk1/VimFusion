@@ -7,6 +7,18 @@ return {
     { "folke/neodev.nvim", opts = {} },
   },
   config = function()
+    vim.diagnostic.config({
+      virtual_text = true,
+      float = {
+        border = "rounded",
+        focusable = true,
+        max_width = 80,
+        source = "always",
+        header = "",
+        prefix = "",
+        wrap = true,
+      },
+    })
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
 
@@ -153,6 +165,17 @@ return {
                 command = "clippy",
               },
             },
+          },
+        })
+      end,
+      ["clangd"] = function()
+        -- configure clangd language server
+        lspconfig["clangd"].setup({
+          capabilities = capabilities,
+          filetypes = { "c", "cpp", "objc", "objcpp" },
+          cmd = { "clangd", "--background-index", "--clang-tidy" },
+          init_options = {
+            clangdFileStatus = true,
           },
         })
       end,

@@ -3,9 +3,10 @@ vim.g.mapleader = " "
 local keymap = vim.keymap -- for conciseness
 
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-
+-- This keymap is to comment or uncommetn code quickly according to the language
+keymap.set("v", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", { desc = "Toggle comment for selected code" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
-keymap.set("n", "<leader>u", ":UndotreeToggle<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>u", ":UndotreeToggle<CR>", { desc = "Toggle Undo Tree" })
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
