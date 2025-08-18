@@ -169,6 +169,25 @@ return {
           },
         })
       end,
+      ["gopls"] = function()
+        -- configure gopls (Go language server)
+        lspconfig["gopls"].setup({
+          capabilities = capabilities,
+          filetypes = { "go", "gomod", "gowork", "gotmpl" },
+          cmd = { "gopls" },
+          settings = {
+            gopls = {
+              analyses = {
+                unusedparams = true,
+                shadow = true,
+              },
+              staticcheck = true,
+              gofumpt = true, -- format using gofumpt
+            },
+          },
+        })
+      end,
+
       ["clangd"] = function()
         -- configure clangd language server
         lspconfig["clangd"].setup({
