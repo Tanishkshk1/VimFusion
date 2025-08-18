@@ -21,7 +21,7 @@ return {
     })
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
-
+    local navic = require("nvim-navic")
     -- import mason_lspconfig plugin
     local mason_lspconfig = require("mason-lspconfig")
 
@@ -94,6 +94,7 @@ return {
       on_attach = function (client,bufnr)
         client.server_capabilities.signatureHelpProvider = false
         on_attach(client,bufnr)
+        navic.attach(client,bufnr)
       end,
       capabilities = capabilities,
     }
