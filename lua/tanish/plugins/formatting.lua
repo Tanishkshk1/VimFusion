@@ -3,6 +3,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   config = function()
     local conform = require("conform")
+    local util = require("conform.util")
 
     conform.setup({
       formatters_by_ft = {
@@ -26,6 +27,21 @@ return {
         async = false,
         timeout_ms = 1000,
       },
+      -- 👇 Fix: override formatters with new root_file API
+      formatters = {
+        prettier = {
+          cwd = util.root_file({ "package.json", ".prettierrc", ".git" }),
+        },
+        stylua = {
+          cwd = util.root_file({ "stylua.toml", ".git" }),
+        },
+        black = {
+          cwd = util.root_file({ "pyproject.toml", ".git" }),
+        },
+        isort = {
+          cwd = util.root_file({ "pyproject.toml", ".git" }),
+        },
+      },
     })
 
     vim.keymap.set({ "n", "v" }, "<leader>mp", function()
@@ -37,3 +53,4 @@ return {
     end, { desc = "Format file or range (in visual mode)" })
   end,
 }
+
